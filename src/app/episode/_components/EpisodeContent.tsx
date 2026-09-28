@@ -107,7 +107,7 @@ const EpisodeContent = ({ episodeId }: EpisodeContentProps) => {
 	const EpisodeData: PodcastEpisode = episodeData?.data;
 	const EpisodeCommentsData: EpisodeComment[] = episodeCommentsData?.data?.data;
 
-	const fullUrl = `${BaseUrl}/$episodeId}`;
+	const fullUrl = `${BaseUrl}/episode/${episodeId}`;
 
 	// Add this mutation alongside the existing queries:
 	const createCommentMutation = useMutation(

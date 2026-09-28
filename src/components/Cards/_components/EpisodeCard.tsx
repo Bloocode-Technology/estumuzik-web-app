@@ -34,7 +34,7 @@ const PodcastCard = ({ data, index, allEpisodes }: PodcastProps) => {
   );
   const [isPending, startTransition] = useTransition();
   const router = useRouter();
-  const fullUrl = `${BaseUrl}episode/${data?.id}`;
+  const fullUrl = `${BaseUrl}/episode/${data?.id}`;
   // Helpers
   const episodeThumbnail = data?.picture_url;
   const podcastCover =

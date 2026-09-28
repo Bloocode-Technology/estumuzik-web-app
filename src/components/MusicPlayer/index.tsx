@@ -287,7 +287,7 @@ const MusicPlayer: React.FC = () => {
     }
   };
 
-  const fullUrl = `${BaseUrl}/${activeSong?.id}`;
+  const fullUrl = `${BaseUrl}/episode/${activeSong?.id}`;
   const handleNativeShare = async () => {
     if (navigator.share) {
       try {
